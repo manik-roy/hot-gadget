@@ -1,7 +1,145 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #707070;
+}
+
+.buy-now-btn {
+  padding: 10px 27px 10px 27px;
+  border: 1px solid transparent;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 9px;
+}
+
+.buy-now-btn:focus {
+  outline: none;
+}
+
+.navbar-brand img {
+  width: 90%;
+}
+.nav-item a {
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-header h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1F1F1F;
+}
+.see-all {
+  font-size: 22px;
+  font-weight: 500;
+  color: #FF9D00;
+  cursor: pointer;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+}
+.see-all:hover {
+ border-bottom: 2px solid #FF9D00;
+}
+
+/* carosel css */
+
 #carouselExampleIndicators {
-  background-color: #000;
+  /* background-color: rgb(238, 225, 225); */
 }
 
 .carousel-item {
-  padding: 15px;
+  padding: 0 20px;
+}
+
+.carousel-item h1 {
+  font-size: 41px;
+  font-weight: 500;
+  color: #1F1F1F;
+  margin-bottom: 20px;
+}
+
+.carousel-item p {
+  margin-top: 10px;
+  padding-right: 30%;
+  padding-bottom: 15px;
+}
+
+.carousel-indicators li {
+  background-color:#CECECE;
+  width: 30px;
+  height: 0;
+  margin: 0 5px;
+  border-radius: 6px;
+  background-clip: unset;
+  border-top: 5px solid transparent;
+}
+
+.carousel-indicators li.active {
+  width: 60px;
+  background-color: #FF9C35;
+  
+}
+
+.img-aria img {
+  width: 100%;
+}
+
+.card {
+  padding: 12px;
+  border: none;
+  box-shadow:0px 10px 30px 0px rgba(0, 3, 143, 0.1)
+}
+.card-deck .card{
+  padding-top: 30px;
+}
+
+.card-img-top {
+  width: 90%;
+  margin: 0 auto;
+}
+.card h5 {
+  padding: 15px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+.card p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.second-laptop img{
+  padding-top: 12px;
+}
+.second-laptop .card-body{
+  padding-top: 8px;
+}
+/* section title  */
+.section-title {}
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+}
+.section-title h2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: -25px;
+  height: 9px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius:9px;
+  background-image: linear-gradient(45deg, #FFD019,  #FF9C35);
+}
+.single-img {
+  background-color: ivory;
+  box-shadow:0px 10px 30px 0px rgba(0, 3, 143, 0.1)
+}
+.single-img img{
+  width: 80%;
 }
