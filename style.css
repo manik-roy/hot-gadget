@@ -195,8 +195,20 @@ a {
   padding-top: 10px;
 }
 
+img {
+  cursor: pointer;
+}
+
 .single-img p.shoes {
   margin-top: -25px !important;
+}
+
+.left-side img {
+  transition: .3s;
+}
+
+.left-side img:hover {
+  transform: translateX(15px);
 }
 
 .review-author img {
@@ -204,6 +216,8 @@ a {
   width: 100px;
   margin-top: 25px;
 }
+
+/* subscribe aria style */
 
 .subscribe .section-title p {
   margin-top: 65px !important;
