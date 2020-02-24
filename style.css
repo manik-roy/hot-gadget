@@ -169,3 +169,8 @@ p {
 .single-img p.shoes {
   margin-top: -25px !important;
 }
+.review-author img {
+  border-radius:50%;
+  width: 100px;
+  margin-top: 25px;
+}
