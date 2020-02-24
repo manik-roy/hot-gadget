@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Hot Gadget</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -16,9 +17,9 @@
 
 <body>
   <!-- navbar section start -->
-  <div class="container" id="home">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" /></a>
+  <div class="fixed-top shadow bg-lightgrey">
+    <nav class="navbar container navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,10 +33,10 @@
             <a class="nav-link" href="#product">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#about" tabindex="-1">About Us</a>
+            <a class="nav-link " href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#contact" tabindex="-1">Contact Us</a>
+            <a class="nav-link " href="#about">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -43,7 +44,7 @@
   </div>
   <!-- navbar section end -->
   <!-- slider section start -->
-  <div class="container">
+  <div class="container" id="home">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -51,8 +52,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row align-items-center ">
+        <div class="carousel-item active ">
+          <div class="row align-items-center">
             <div class="col-md-5">
               <h1>Mackbook Pro</h1>
               <p>
@@ -69,7 +70,7 @@
         <div class="carousel-item">
           <div class="row align-items-center">
             <div class="col-md-5">
-              <h1>Mi LED TV 4A PRO 32</h1>
+              <h1>Google mini Speaker</h1>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                 Latin literature.
@@ -82,9 +83,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="row align-items-center ">
+          <div class="row align-items-center">
             <div class="col-md-5">
-              <h1>Mi LED TV 4A PRO 32</h1>
+              <h1>Bluetooth Speaker</h1>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                 Latin literature.
@@ -101,7 +102,7 @@
   </div>
   <!-- slider section end -->
   <!-- smartphone aria start -->
-  <div class="container smartphone pt-5" id="smartphone">
+  <div class="container smartphone pt-5" id="product">
     <div class="div pb-5 d-flex justify-content-between section-header">
       <h2>Smartpphone</h2>
       <p class="see-all">See All</p>
@@ -143,8 +144,6 @@
     </div>
   </div>
   <!-- smartphone aria end -->
-
-
   <!-- Laptop aria start -->
   <div class="container smartphone pt-5 pb-5" id="smartphone">
     <div class="div pb-5 d-flex justify-content-between section-header">
@@ -222,13 +221,44 @@
     </div>
   </div>
   <!-- catagory section end -->
+  <!-- subscribe section start -->
+  <div class="subsecriber-aria mt-5 mb-5 pb-5 bg-lightgrey pt-5">
+    <div class="container subscribe pt-5">
+      <div class="section-title text-center">
+        <h2>Subscribe to Newsletter</h2>
+        <p class="col-md-6 col-offset-3 m-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 m-auto pb-5">
+          <form id="mc-form" novalidate="true">
+            <div class="input-group">
+              <input id="mc-email" type="email" class="form-control b-primary email" placeholder="Email address"
+                name="EMAIL">
+              <span class="input-group-btn sb-btn">
+                <button class="btn pb-2" type="submit"> Subscribe</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- subscribe section end -->
   <!-- Review Section Start -->
-  <div class="container customer-review mt-5 pt-5">
+  <div class="container customer-review mt-5 pt-5 pb-5">
     <div class="section-title text-center">
       <h2>What Our Customers Are Saying</h2>
     </div>
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active text-center">
           <div class="review-aria">
@@ -236,30 +266,33 @@
               <img src="./images/customer1.png" alt="">
               <h3 class="pt-4">Junaid Hasan</h3>
               <p>CEO, Themeland</p>
+              <img src="./images/star.png" class="mt-0" alt="">
               <div class="review">
                 <p><q>Lorem Ipsum is simply dummy text of the <br> printing and typesting indestry. Lorem Ipsum</q></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item text-center">
           <div class="review-aria">
             <div class="review-author">
               <img src="./images/customer2.png" alt="">
               <h3 class="pt-4">Bruce Moccy</h3>
               <p>Founder & CEO Alies</p>
+              <img src="./images/star.png" class="mt-0" alt="">
               <div class="review">
                 <p><q>Lorem Ipsum is simply dummy text of the <br> printing and typesting indestry. Lorem Ipsum</q></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item text-center">
           <div class="review-aria">
             <div class="review-author">
               <img src="./images/customer3.png" alt="">
               <h3 class="pt-4">Alina Moccy</h3>
               <p>Founder & CEO Alies</p>
+              <img src="./images/star.png" class="mt-0" alt="">
               <div class="review">
                 <p><q>Lorem Ipsum is simply dummy text of the <br> printing and typesting indestry. Lorem Ipsum</q></p>
               </div>
@@ -271,12 +304,52 @@
 
   </div>
   <!--Review Section End -->
-
-
+  <!-- footer section start -->
+  <footer>
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-title">
+            <h6>ADDRESS</h6>
+            <p>Dinajpur<br>
+              Nimnorgor, Balubari, Dinajpur<br>
+              +8801780849889<br>
+              <a href="mailto:cm.dpi15@gmail.com">cm.dpi15@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-title">
+            <h6>FOLLOW US</h6>
+            <ul>
+              <li><a href="https://twitter.com/manikroy_89" target="_blank">Twitter</a></li>
+              <li><a href="https://www.facebook.com/cmmanik5" target="_blank">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/manik-roy/" target="_blank">Linkedin</a></li>
+              <li><a href="https://www.instagram.com/manikroy_89/" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="footer-title">
+            <h6>About Us</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero incidunt accusantium architecto vitae
+              sapiente sint ex tenetur optio officia. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pt-5">
+          <div class="text-center copyright">
+            <p>Copyright &copy;2020. CM Manik</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -284,7 +357,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
